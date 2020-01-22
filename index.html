@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+        <title>Отправить сообщение в Whatsapp</title>
+        <style>
+            body {
+                font-family: 'Nunito', sans-serif;
+                font-size: 1.1em;
+                line-height: 1.5em;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container mt-2 mb-2">
+
+            <div class="row mt-2 mb-2">
+                <div class="col-md-8">
+                    <h1 class="font-weight-bold">Whatsapp Send</h1>
+                    <h2 class="text-secondary font-italic">отправка сообщений в Whatsapp</h2>
+                    <p>Если вы пользуетесь приложением Whatsapp, то наверняка успели заметить, что из приложения можно отправить сообщение только тем пользователям, которые есть в вашей адресной книге</p>
+                    <p>Согласитесь - это крайне неудобно, ведь для единичного взаимодействия приходится добавлять номер телефона в свой контакт-лист.</p>
+                    <p class="font-weight-bold">С помощью нашего сервиса вы сможете отправить сообщение любому пользователю Whatsapp</p>
+                    <p>Для этого введите нужный номер телефона в соответствующее поле. По желанию вы также можете добавить сообщение.</p>
+                    <p>После нажатия на кнопку "Отправить" вы будете переадресованы в приложение или сервис whatsapp web, в зависимости вашего устройства</p>
+                    
+                </div>
+                <div class="col-md-4 bg-light rounded pt-2 pb-2">
+                    <p class="text-center mt-2">Введите номер телефона и сообщение, затем нажмите на кнопку "Отправить"</p>
+                    <form action="https://api.whatsapp.com/send" method="GET">
+                        <input type="text" class="form-control mt-2 mb-1" name="phone" placeholder="Номер телефона" required>
+                        <textarea name="text" class="form-control mt-1 mb-1" placeholder="Текст сообщения"></textarea>
+                        <button class="btn btn-success btn-lg mt-1 mb-1" type="submit">Отправить</button>
+                        <p class="text-center mt-2 mb-2 font-italic">Наш сервис не собирает никакие пользовательские данные</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
